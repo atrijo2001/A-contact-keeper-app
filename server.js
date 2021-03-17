@@ -3,7 +3,15 @@ const users = require('./routes/users')
 const auth = require('./routes/auth')
 const contacts = require('./routes/contacts')
 
+const connectDB = require('./config/DB')
+
 const app = express()
+
+//Init middleware
+app.use(express.json({extended: false}))
+
+//Connect database and call connect db
+connectDB()
 
 app.get('/',(req, res) => {
     res.json({msg: "Welcome to the contacts keeper api"})

@@ -1,0 +1,4 @@
+{
+    "mongoURI": "mongodb+srv://atrijo:atrijo@cluster0.aqqqq.mongodb.net/myFirstDatabase?retryWrites=true&w=majority",
+    "jwtSecret": "secret"
+}
